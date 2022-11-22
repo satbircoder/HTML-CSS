@@ -1,0 +1,52 @@
+html, body,main{
+    margin: 0;
+    height: 100%;
+}
+h1{
+    margin-left: 15px;
+}
+.row{
+    display: flex;
+    height: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.bg-conatiner1, .bg-container2{
+    background-image: url("https://media.istockphoto.com/id/1255905201/photo/african-computer-programmer-writing-code.jpg?s=612x612&w=0&k=20&c=7mvz30Ypq4rttwBaQ0SmwwFKjKUnt6u67ptBxVc4Wt0=");
+    background-size: cover;
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+.bg-container2{
+    background-image: url("https://i.insider.com/60144316a7c0c4001991dde6?width=700&format=jpeg&auto=webp");
+    background-size: cover;
+    flex: 48%;
+}
+button{
+    background-color: rgb(20, 181, 235);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    margin-top: 2cm;
+    height: 50px;
+    width: 150px;
+    text-align:center;
+    border-style:hidden;
+    border-radius: 10px;
+}
+p{
+    margin-left: 15px;
+}
+a{
+    margin-left: 20px;
+    color: white;
+    text-decoration:none;
+}
+.schedule{
+    padding-top: 250px;
+    text-align: left;
+    margin-left: 5px;
+}
+
