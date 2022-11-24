@@ -7,26 +7,38 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel = "stylesheet" href="StyleAPI.css" type="text/css"/>
         <script src="https://kit.fontawesome.com/44e1882c67.js" crossorigin="anonymous"></script>
+        <style>
+           .column1{
+    background-image: linear-gradient(to top, transparent 0%, #000000bd 70%, #000000 95%), url("https://media.istockphoto.com/id/1255905201/photo/african-computer-programmer-writing-code.jpg?s=612x612&w=0&k=20&c=7mvz30Ypq4rttwBaQ0SmwwFKjKUnt6u67ptBxVc4Wt0=");
+}
+.column2{
+    background-image: linear-gradient(to top, transparent 0%, #000000bd 70%, #000000 95%), url("https://i.insider.com/60144316a7c0c4001991dde6?width=700&format=jpeg&auto=webp");
+}
+.column2 > p{
+    font-size: x-large;
+}
+        </style>
     </head>
     <body>
-        <main>
         <div class="row">
-        <div class="bg-conatiner1">
-        <h1>Calling APIs with React 17</h1>
-        <p>by Christian Wenz</p>
-        <p>This Course will teach you everything about calling APIs from your React app.</p>
-        <button><i class="fa fa-play-circle-o" style="font-size: 24px;"></i> Start Course</button>
-        <a href=""><i class="fa fa-bookmark-o" style="font-size:24px; padding-right: 5px; padding-top: 10px;"></i>  Bookmark</a>
-        <a href=""><i class="fa-solid fa-tower-cell" style="font-size: 24px;"></i> Add to Channel</a>
-        <a href=""><i class="fa fa-download" style="font-size:24px"></i> Download Course</a>
-        <i class="material-icons" style="font-size:32px; padding-left: 10px; margin-top: 90px;">schedule</i>
-        </div>
-        <div class="bg-container2">
-            <div class="schedule">
-            <a href="" style="margin-left: 0%;">Schedule Reminder</a>
+            <div class="column1">
+                <h1>Calling APIs with React 17</h1>
+                <p>by Christian Wenz</p>
+                <p>This Course will teach you everything about calling APIs from your React app.</p>
+                <p class = "content">
+                <button><i class="fa fa-play-circle-o" style="font-size: 24px;"></i> Start Course</button>
+                <a href=""><i class="fa fa-bookmark-o" style="font-size:24px; padding-left: 0.7em;"></i>  Bookmark</a>
+                <a href=""><i class="fa-solid fa-tower-cell" style="font-size: 24px; padding-left: 0.7em;"></i> Add to Channel</a>
+                <a href=""><i class="fa fa-download" style="font-size:24px; padding-left: 0.5em; padding-top: 0.7em;"></i>Download Course</a>
+                <a href="" style="padding-top: 0.7em;"><i class="material-icons" style="font-size:32px; padding-top: 0.5em;">schedule</i>Schedule Reminder</a>
+                </p>
+            </div>
+            <div class="column2">
+                   <P>
+                    RapidAPI is a platform for accessing web-based APIs.
+                    The most popular type of web API is a Representational state transfer API or RESTful API for short. To be brief, 
+                    it follows an architecture that uses predefined and stateless operations to access web resources.
+                   </P>
             </div>
         </div>
-    </div>
-</main>
     </body>
-</html>
