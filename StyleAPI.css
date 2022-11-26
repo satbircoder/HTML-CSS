@@ -1,60 +1,62 @@
 *{
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 html,body{
-    height: 100%;
+  height: 100%;
 }
 .row{
-    height: 100%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+  height: 100%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
 .column1,.column2 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height:100%; 
-    background-size: cover;
-  }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  @media screen and (max-width: 600px) {
-    .column1,.column2
-    {
-      width: 100%;
-      height:auto;
-     }
-  }
-  
-  
-  p{
-    padding: 0.5em;;
-  }
-  .content{
-    margin-top: 20%;
-    margin-left: 1.8em;
-    padding-top: 0.4%;
-  }
-  .content2{
-    margin-top: 35.5%;
-    margin-left: 0%;
-  }
-  a{
-    text-decoration: none;
-    color: white;
-  }
-  button{
-    background-color: rgb(20, 181, 235);
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    height: 50px;
-    width: 150px;
-    text-align:center;
-    border-style:hidden;
-    border-radius: 10px;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height:100%; 
+  background-size: cover;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav{
+  display: flex;
+  margin-top: 20%;
+}
+nav > ul{
+  display: inline;
+  padding: 0;
+}
+nav > ul > li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px 0 5px;
+}
+@media screen and (max-width: 670px) {
+  .column1,.column2
+  {
+    width: 100%;
+   height: auto;
+   }
+}
+p{
+  padding: 0.5em;;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+button{
+  background-color: rgb(20, 181, 235);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  height: 50px;
+  width: 150px;
+  text-align:center;
+  border-style:hidden;
+  border-radius: 10px;
 }
