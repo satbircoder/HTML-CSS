@@ -22,8 +22,9 @@ html,body{
   display: table;
   clear: both;
 }
-nav{
+/* nav{
   display: flex;
+  justify-content: center;
   margin-top: 20%;
 }
 nav > ul{
@@ -31,10 +32,10 @@ nav > ul{
   padding: 0;
 }
 nav > ul > li{
-  display: inline-block;
+  display:inline-block;
   list-style: none;
   margin: 0 5px 0 5px;
-}
+} */
 @media screen and (max-width: 670px) {
   .column1,.column2
   {
@@ -42,13 +43,16 @@ nav > ul > li{
    height: auto;
    }
 }
+
 p{
   padding: 0.5em;;
 }
+
 a{
   text-decoration: none;
   color: white;
 }
+
 button{
   background-color: rgb(20, 181, 235);
   font-size: 18px;
@@ -59,4 +63,15 @@ button{
   text-align:center;
   border-style:hidden;
   border-radius: 10px;
+}
+
+.button {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.button-group {
+  display: flex;
 }
