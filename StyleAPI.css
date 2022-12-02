@@ -1,31 +1,37 @@
 *{
-  box-sizing: border-box;
+box-sizing: border-box;
 }
-html,body{
+.html,body{
   height: 100vh;
   width: 100%;
 }
+.header{
+  margin-left: 1rem;
+}
 .row{
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  height: 100vh;
-  color: white;
-}
-.column1,.column2{
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  border: none;
-  flex: 50%;
-  height: 100vh;
-  background-size: cover;
+ color: white;
 }
 .column1{
-background-image: linear-gradient(to top, transparent 0%, #000000bd 70%, #000000 95%), url("https://media.istockphoto.com/id/1255905201/photo/african-computer-programmer-writing-code.jpg?s=612x612&w=0&k=20&c=7mvz30Ypq4rttwBaQ0SmwwFKjKUnt6u67ptBxVc4Wt0=");
+  flex: 70%;
+  background-image: linear-gradient(to top , transparent 0%, #000000bd 80%, #000000 95%), url("https://media.istockphoto.com/id/1255905201/photo/african-computer-programmer-writing-code.jpg?s=612x612&w=0&k=20&c=7mvz30Ypq4rttwBaQ0SmwwFKjKUnt6u67ptBxVc4Wt0=");
+  background-size: cover;
+  height: 100vh; 
 }
 .column2{
+  flex: 30%;
   background-image: linear-gradient(to top, transparent 0%, #000000bd 70%, #000000 95%), url("https://i.insider.com/60144316a7c0c4001991dde6?width=700&format=jpeg&auto=webp");
+  background-size: cover;
+  height: 100vh;
+}
+.button-group{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 4rem;
 }
 .button{
   background-color: rgb(20, 181, 235);
@@ -33,44 +39,43 @@ background-image: linear-gradient(to top, transparent 0%, #000000bd 70%, #000000
   font-weight: bold;
   color: white;
   height: 50px;
-  width: 150px;
-  text-align:center;
+  width: 200px;
   border-style:hidden;
   border-radius: 10px;
   align-items: center;
   gap: 0.2rem;
   justify-content: center;
+  margin-right: 0.5rem;
 }
-.link-group{
-  align-items: center;
-  justify-content: center;
-}
-.inside{
-  padding-top: 0.8rem;
-  padding-left: 2rem;
-}
-a{
+.button-group a{
   text-decoration: none;
+  text-align: center;
+  padding: 15px 20px;
   color: white;
 }
-.button-group{
-  padding-top: 4rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.header{
+.column2 p{
+  font-size: x-large;
+  line-height: 1.5;
   margin-left: 1rem;
 }
-.restyle{
-  margin-top: 2rem;
-}
-.column2{
-  font-size: x-large;
-}
-@media (min-width: 670px) {
-  .row {
-    flex-direction: row;
-  }
+.button-group a:hover{
+  background-color: grey;
+  color: black;
 }
 
+@media screen and (max-width:1290px) {
+  .row,.column1,.column2,.button-group{
+    flex-direction: column;
+  }
+  .button{
+    margin-right: 0rem;
+    margin-bottom: 0.5rem;
+  }
+  .button-group a{
+    color:black;
+    font-weight:bold;
+  }
+  .button-group a:hover{
+    color:white;
+  }
+}
