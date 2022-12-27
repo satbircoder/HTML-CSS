@@ -1,60 +1,81 @@
 *{
-    margin: 0;
-    box-sizing: border-box;
+box-sizing: border-box;
 }
-html,body{
-    height: 100%;
+.html,body{
+  height: 100vh;
+  width: 100%;
+}
+.header{
+  margin-left: 1rem;
 }
 .row{
-    height: 100%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ color: white;
 }
-.column1,.column2 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height:100%; 
-    background-size: cover;
+.column1{
+  flex: 70%;
+  background-image: linear-gradient(to top , transparent 0%, #000000bd 80%, #000000 95%), url("https://media.istockphoto.com/id/1255905201/photo/african-computer-programmer-writing-code.jpg?s=612x612&w=0&k=20&c=7mvz30Ypq4rttwBaQ0SmwwFKjKUnt6u67ptBxVc4Wt0=");
+  background-size: cover;
+  height: 100vh; 
+}
+
+.column2{
+  flex: 30%;
+  background-image: linear-gradient(to top, transparent 0%, #000000bd 70%, #000000 95%), url("https://i.insider.com/60144316a7c0c4001991dde6?width=700&format=jpeg&auto=webp");
+  background-size: cover;
+  height: 100vh;
+}
+.button-group{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 4rem;
+}
+.button{
+  background-color: rgb(20, 181, 235);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  height: 50px;
+  width: 200px;
+  border-style:hidden;
+  border-radius: 10px;
+  align-items: center;
+  gap: 0.2rem;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+.button-group a{
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 20px;
+  color: white;
+}
+.column2 p{
+  font-size: x-large;
+  line-height: 1.5;
+  margin-left: 1rem;
+}
+.button-group a:hover{
+  background-color: grey;
+  color: black;
+}
+
+@media screen and (max-width:1290px) {
+  .row,.column1,.column2,.button-group{
+    flex-direction: column;
   }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  .button{
+    margin-right: 0rem;
+    margin-bottom: 0.5rem;
   }
-  @media screen and (max-width: 600px) {
-    .column1,.column2
-    {
-      width: 100%;
-      height:auto;
-     }
+  .button-group a{
+    font-weight:bold;
   }
-  
-  
-  p{
-    padding: 0.5em;;
+  .button-group a:hover{
+    color:white;
   }
-  .content{
-    margin-top: 20%;
-    margin-left: 1.8em;
-    padding-top: 0.4%;
-  }
-  .content2{
-    margin-top: 35.5%;
-    margin-left: 0%;
-  }
-  a{
-    text-decoration: none;
-    color: white;
-  }
-  button{
-    background-color: rgb(20, 181, 235);
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    height: 50px;
-    width: 150px;
-    text-align:center;
-    border-style:hidden;
-    border-radius: 10px;
 }
