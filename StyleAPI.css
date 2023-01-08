@@ -1,60 +1,90 @@
 *{
-    margin: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html,body{
-    height: 100%;
+  height: 100vh;
+  width: 100%;
 }
 .row{
-    height: 100%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
 }
-.column1,.column2 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height:100%; 
-    background-size: cover;
-  }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  @media screen and (max-width: 600px) {
-    .column1,.column2
-    {
-      width: 100%;
-      height:auto;
-     }
-  }
+.column1{
+  display: flex;
+  flex-direction: column;
+  flex: 70%;
+  background-image: linear-gradient(to top , transparent 0%, #000000bd 80%, #000000 95%), url("https://media.istockphoto.com/id/1255905201/photo/african-computer-programmer-writing-code.jpg?s=612x612&w=0&k=20&c=7mvz30Ypq4rttwBaQ0SmwwFKjKUnt6u67ptBxVc4Wt0=");
+  background-size: cover;
+  height: 100vh; 
+}
+
+.column2{
+  flex: 30%;
+  background-image: linear-gradient(to top, transparent 0%, #000000bd 70%, #000000 95%), url("https://i.insider.com/60144316a7c0c4001991dde6?width=700&format=jpeg&auto=webp");
+  background-size: cover;
+  height: 100vh;
+}
+.header{
+  margin: 1rem 1rem;
   
-  
-  p{
-    padding: 0.5em;;
-  }
-  .content{
-    margin-top: 20%;
-    margin-left: 1.8em;
-    padding-top: 0.4%;
-  }
-  .content2{
-    margin-top: 35.5%;
-    margin-left: 0%;
-  }
-  a{
-    text-decoration: none;
-    color: white;
-  }
-  button{
+}
+.paragraph-container p{
+padding: 1rem 0;
+}
+.sectionbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.button-group{
+  margin: 1rem 1rem;
+}
+.link-group{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.button-group a{
+  text-decoration: none;
+  color: white;
+}
+.button-group span{
+  padding: 0 0.3rem;
+}
+  .button{
     background-color: rgb(20, 181, 235);
     font-size: 18px;
     font-weight: bold;
     color: white;
     height: 50px;
     width: 150px;
-    text-align:center;
     border-style:hidden;
     border-radius: 10px;
-}
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .column2 p{
+    font-size: x-large;
+    line-height: 1.5;
+    margin-left: 1rem;
+  }
+  .button-group a:hover{
+    color: red;
+  }
+  
+  @media screen and (max-width:1290px) {
+    .row,.sectionbox{
+      flex-direction: column;
+    }
+    .button-group a{
+      font-weight:bold;
+    }
+  } 
